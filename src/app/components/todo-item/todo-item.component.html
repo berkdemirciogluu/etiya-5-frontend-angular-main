@@ -1,0 +1,15 @@
+<div class="card" style="width: 18rem">
+  <div class="card-body">
+    <h5 class="card-title">{{ todo }}</h5>
+    <a (click)="onDeleteBtnClick()" class="btn btn-danger">Sil</a>
+  </div>
+</div>
+
+<!-- ViewContainerRef -->
+<div *ngIfNot="true">
+  <p>Ben gözükmek istemiyorum</p>
+  <!-- TemplateRef -->
+  <p>Ben gözükmek istemiyorum 2</p>
+  <!-- TemplateRef -->
+</div>
+<!-- ViewContainerRef -->

@@ -1,0 +1,11 @@
+<div class="card-body">
+  <h5 class="card-title" [appHighlight]="'red'">{{ product.name }}</h5>
+  <p class="card-text">
+    {{ product.quantityPerUnit }}
+  </p>
+  <p [appHighlight]="'blue'">
+    {{ product.unitPrice }}
+  </p>
+  <p>{{ dateNow | date : "M/d/yy" }}</p>
+  <a (click)="addToCartClick()" class="btn btn-primary">Add to Cart</a>
+</div>
